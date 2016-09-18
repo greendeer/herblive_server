@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/greendeer/herblive/devel -DCMAKE_INSTALL_PREFIX=/home/greendeer/herblive/install -G Unix Makefiles

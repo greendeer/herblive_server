@@ -1,0 +1,16 @@
+<launch>
+<param name="/light"  value="0" type="double" />
+<param name="/soil_t"  value="0" type="double" />
+<param name="/soil_h"  value="0" type="double" />
+<param name="/air_t"  value="0" type="double" />
+<param name="/air_h"  value="0" type="double" />
+<param name="/water"  value="0" type="double" />
+
+<param name="/lightLV"  value="4" type="int" />
+<param name="/tempLV"  value="4" type="int" />
+<param name="/thirstLV"  value="4" type="int" />
+<param name="/waterLV"  value="4" type="int" />
+<node name="herb_server_node" pkg="herb_server" type="herb_server_node" respawn="true" />
+<node name="herb_calcul_node" pkg="herb_server" type="herb_calcul_node" respawn="true" />
+<node name="herb_push_node" pkg="herb_server" type="herb_push_node" respawn="true" />
+</launch>
